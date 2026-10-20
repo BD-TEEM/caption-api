@@ -26,7 +26,7 @@ app.post('/api/transcribe', upload.single('file'), async (req, res) => {
         const response = await axios.post('https://api.openai.com/v1/audio/transcriptions', formData, {
             headers: {
                 ...formData.getHeaders(),
-                'Authorization': `Bearer sk-990422f11dd14d43b0d100c4b9ecd054`
+                'Authorization': `Bearer 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`
             }
         });
 
